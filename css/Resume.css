@@ -1,0 +1,296 @@
+html, body {
+    max-width: 100%;
+    margin: 0;
+    height: 100%;
+}
+#preloader{
+    position:fixed;
+    width:100%;
+    background:#fff url('../res/a.gif') no-repeat center;
+    height:100vh;
+    z-index:9999;
+}
+header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9998;
+    transition: all 0.3s ease-out;
+}
+.navbar-toggle {
+    display: none;
+}
+#home {
+    height: 100%;
+    width: 100%;
+}
+ul {
+    list-style: none;
+    float: right;
+}
+#profile {
+    float: left;
+    margin: 10px 0px;
+    width: 25%;
+}
+#profile img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    max-width:100%;
+    cursor: pointer;
+    border: 1px solid lightgray;
+}
+
+.headerDiv {
+    margin: 0 auto;
+    width: 90%;
+}
+.headerDiv nav{
+    float:left;
+    width: 75%;
+}
+.headerDiv nav li {
+    padding: 5px 11px;
+    float: left;
+}
+
+#pnlMask {
+    opacity: 0.7;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+}
+nav li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-family: poppins;
+    font-weight: 1000;
+    transition: 0.3s font-size ease-in;
+}
+nav li a:hover {
+    font-size: 14px;
+    border-bottom: 2px solid  teal;
+}
+.auto-write {
+    margin: 0 auto;
+    position: absolute;
+    z-index: 9998;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+
+.auto-write p {
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 4px;
+    text-align: center;
+} 
+   
+h1{
+    color: white;
+    letter-spacing: 3px;
+    font-size: 50px;
+}
+.home-section{
+    background: url("../res/bg_1398.jpg") no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+  }
+
+///////////////*mobile styles*////////////////////////////////////
+
+@media screen and (max-width:1000px){
+    h1{
+    color: white;
+    letter-spacing: 3px;
+    font-size: 33px;
+    }
+  }
+@media screen and (max-width:867px){
+   .home-section{
+    background: url("../res/bg_700.jpg") no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    }
+    nav ul{
+       padding: 0px!important; 
+       overflow: hidden;
+      
+    }
+   nav ul.open {
+overflow: hidden;
+height: auto;
+width: 137%;
+background-color:
+black;
+position: relative;
+z-index: 9999 !important;
+}
+    .liopen {
+    float: none !important;
+    }
+    .liopen:hover {
+    background-color: 
+    teal;
+    border-bottom: none !important;
+}
+    h1{
+    color: white;
+    letter-spacing: 3px;
+    font-size: 25px;
+    }
+}
+
+@media screen and (max-width:700px){
+    
+    h1{
+    color: white;
+    letter-spacing: 3px;
+    font-size: 19px;
+    }
+    
+    .home-section{
+    background: url("../res/bg_700.jpg") no-repeat;
+    height: 100%;
+    background-size: cover;
+    width: 100%;
+    }
+    
+    .navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 12px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: block;
+    cursor:pointer;
+    }
+    
+    .navbar-toggle .icon-bar {
+    background: #f8f8f8;
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    margin-bottom: 4px;
+    }
+
+    nav ul{
+       padding: 0px!important; 
+       overflow: hidden;
+       height:0;
+    }
+     .liopen {
+    float: none !important;
+    }
+    .liopen:hover {
+    background-color: 
+    teal;
+    border-bottom: none !important;
+}
+   nav ul.open {
+overflow: hidden;
+height: auto;
+width: 137%;
+background-color:
+black;
+position: relative;
+z-index: 9999 !important;
+} 
+   .auto-write p {
+    color: white;
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width:480px){
+    
+    .home-section{
+    background: url("../res/bg_480.jpg") no-repeat;
+    height: 100%;
+    background-size: cover;
+    width: 100%;
+    }
+    
+    .burger-nav{
+    background: url(../res/burger.png) no-repeat 98% center;
+    height:40px;
+    width:100%;
+    display: block;
+    }
+    
+    nav ul{
+       padding: 0px!important; 
+       overflow: hidden;
+       height:0;
+    }
+     .liopen {
+    float: none !important;
+    }
+    .liopen:hover {
+    background-color: 
+    teal;
+    border-bottom: none !important;
+}
+    nav ul.open {
+overflow: hidden;
+height: auto;
+width: 137%;
+background-color:
+black;
+position: relative;
+z-index: 9999 !important;
+}
+   .auto-write p {
+    color: white;
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-align: center;
+    }
+    
+    h1{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 15px;
+     }
+     .navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 12px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: block;
+    }
+    
+    .navbar-toggle .icon-bar {
+    background: #f8f8f8;
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    margin-bottom: 4px;
+    }
+    
+}

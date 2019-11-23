@@ -1,0 +1,26 @@
+$(document).ready(function (){
+    typeWriter();
+    bindEvents();
+});
+
+function typeWriter() {
+var typed= new Typed("#innerTyping",{
+    strings:["I am a Web Developer.","I live in Gurugram, India."],
+    typeSpeed:40,
+    backSpeed:100,
+    backDelay:1000
+});
+}
+
+function bindEvents(){
+   $(".navbar-toggle").bind("click",openMenu);
+   
+}
+
+function openMenu(){
+    $(".headerDiv ul").toggleClass("open");
+    $(".headerDiv ul li").toggleClass("liopen");
+}
+
+function load(){ document.getElementById("preloader").style.display="none";
+}
