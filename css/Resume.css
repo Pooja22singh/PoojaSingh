@@ -369,7 +369,7 @@ z-index: 9999 !important;
     #paraAbt {
     background-color: 
     whitesmoke;
-    height: 30%;
+    height: auto;
         width:100%;
 }
     #cntnAbt p {
