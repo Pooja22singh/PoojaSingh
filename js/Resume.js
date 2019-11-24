@@ -14,7 +14,18 @@ var typed= new Typed("#innerTyping",{
 
 function bindEvents(){
    $(".navbar-toggle").bind("click",openMenu);
-   
+   var myNav = document.getElementsByTagName('header');
+   window.onscroll = function () { 
+    "use strict";
+    if (window.pageYOffset >= 200 ) {
+        $(myNav).addClass("nav-colored");
+        $(myNav).removeClass("nav-transparent");
+    } 
+    else {
+      $(myNav).removeClass("nav-colored");
+        $(myNav).addClass("nav-transparent");
+    }
+};
 }
 
 function openMenu(){
