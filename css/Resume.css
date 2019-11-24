@@ -358,7 +358,7 @@ z-index: 9999 !important;
     flex-direction: column;
 }
     #imgAbt {
-    height: 50%;
+    height: 70%;
     width:100%;
 }
     #imgAbt img {
@@ -369,7 +369,7 @@ z-index: 9999 !important;
     #paraAbt {
     background-color: 
     whitesmoke;
-    height: 50%;
+    height: 30%;
         width:100%;
 }
     #cntnAbt p {

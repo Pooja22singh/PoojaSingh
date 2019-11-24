@@ -14,6 +14,7 @@ var typed= new Typed("#innerTyping",{
 
 function bindEvents(){
    $(".navbar-toggle").bind("click",openMenu);
+$(".headerDiv ul li").bind("click",openMenu);
    var myNav = document.getElementsByTagName('header');
    window.onscroll = function () { 
     "use strict";
