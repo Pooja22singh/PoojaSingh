@@ -27,6 +27,19 @@ $(".headerDiv ul li").bind("click",openMenu);
         $(myNav).addClass("nav-transparent");
     }
 };
+    // Option 2 - jQuery Smooth Scrolling
+ $('nav a').on('click', function (e) {
+   if (this.hash !== '') {
+     e.preventDefault();
+
+     const hash = this.hash;
+
+     $('html, body')
+       .animate({
+         scrollTop: $(hash).offset().top
+       },900);
+   }
+ });
 }
 
 function openMenu(){
