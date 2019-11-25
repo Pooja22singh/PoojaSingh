@@ -3,6 +3,7 @@ html, body {
     margin: 0;
     height: 100%;
     font-family: Poppins,sans-serif;
+    scroll-behavior: smooth;
 }
 
 #preloader{
@@ -12,6 +13,7 @@ html, body {
     height:100vh;
     z-index:9999;
 }
+
 /*about styling*/
 #about {
     display: flex;
@@ -145,13 +147,17 @@ nav li a:hover {
     text-align: center;
 } 
    
-h1 {
+#innerTyping {
     color: 
     white;
     letter-spacing: 5px;
     font-size: 50px;
     line-height: 55px;
     font-weight: 500;
+}
+.typed-cursor,.typed-cursor--blink{
+  color:white;
+   font-size: 50px; 
 }
 .home-section{
     background: url("../res/bg_1398.jpg") no-repeat;
@@ -163,7 +169,7 @@ h1 {
 ///////////////*mobile styles*////////////////////////////////////
 
 @media screen and (max-width:1000px){
-    h1{
+    #innerTyping{
     color: white;
     letter-spacing: 3px;
     font-size: 33px;
@@ -198,12 +204,15 @@ z-index: 9999;
     teal;
     border-bottom: none;
 }
-    h1{
+    #innerTyping{
     color: white;
     letter-spacing: 3px;
     font-size: 25px;
     }
-    
+    .typed-cursor,.typed-cursor--blink{
+  color:white;
+   font-size: 25px; 
+}
     
     /*Queries for Mobiles*/
     
@@ -213,12 +222,15 @@ z-index: 9999;
 
 @media screen and (max-width:700px){
     
-    h1{
+    #innerTyping{
     color: white;
     letter-spacing: 3px;
     font-size: 19px;
     }
-    
+     .typed-cursor,.typed-cursor--blink{
+  color:white;
+   font-size: 19px; 
+}
     .home-section{
     background: url("../res/bg_700.jpg") no-repeat;
     height: 100%;
@@ -325,7 +337,7 @@ z-index: 9999 !important;
     text-align: center;
     }
     
-    h1{
+    #innerTyping{
     color: white;
     letter-spacing: 2px;
     font-size: 15px;
@@ -392,5 +404,13 @@ z-index: 9999 !important;
 #cntnAbt {
     margin-top: 10%;
 }
-
+   #innerTyping{
+    color: white;
+    letter-spacing: 3px;
+    font-size: 15px;
+    }
+     .typed-cursor,.typed-cursor--blink{
+  color:white;
+   font-size: 15px; 
+}
 }
