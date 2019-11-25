@@ -134,6 +134,8 @@ nav li a:hover {
     transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
+    width: 70%;
+    text-align: center;
 }
 
 .auto-write p {
@@ -143,10 +145,13 @@ nav li a:hover {
     text-align: center;
 } 
    
-h1{
-    color: white;
-    letter-spacing: 3px;
+h1 {
+    color: 
+    white;
+    letter-spacing: 5px;
     font-size: 50px;
+    font-family: Poppins;
+    line-height: 55px;
 }
 .home-section{
     background: url("../res/bg_1398.jpg") no-repeat;
