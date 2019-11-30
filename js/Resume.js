@@ -5,7 +5,7 @@ $(document).ready(function (){
 
 function typeWriter() {
 var typed= new Typed("#innerTyping",{
-    strings:["I am a Web Developer.","I live in Gurugram, India."],
+    strings:["I am a Front-End Developer.","I live in Gurugram, India."],
     typeSpeed:40,
     backSpeed:100,
     backDelay:1000
