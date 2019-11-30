@@ -1,4 +1,8 @@
-
+#walkingpanda
+{
+    bottom: 0;
+    position:fixed;
+}
 #road
 {
     border-bottom: 10px dashed black;
