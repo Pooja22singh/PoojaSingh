@@ -6,6 +6,8 @@
      <link rel="stylesheet"  type="text/css" href="./css/Resume.css">
      <link rel="shortcut icon" type="image/ico" href="./res/favicon.ico">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700">
+    <link rel="stylesheet" href="./css/pandastyle.css">
+     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
      <script src="./js/jquery_1.9.1.js"></script>
      <script src="./js/Resume.js"></script>
      <script src="./js/typed.min.js"></script>
@@ -19,20 +21,30 @@
                 <img src="./res/mobile.jpg" alt="Pooja Singh">
                 </div>
                 <nav>
+<!--
                       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                                       
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
                                     </button>
+-->
+                    <div id="icon-group">
+                    <div id="icon">
+                    <div class="before"></div>
+                    <div class="center"></div>
+                    <div class="after"></div>
+                    </div>
+                    </div>
+                    
                     <ul>
                       
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="">Experience</a></li>
-                        <li><a href="">Skills</a></li>
-                        <li><a href="">Education</a></li>
-                        <li><a href="">Contact </a></li>
+                        <li class=""><a href="#home">Home</a></li>
+                        <li class=""><a href="#about">About</a></li>
+                        <li class=""><a href="#education">Education</a></li>
+                        <li class=""><a href="#skills">Skills</a></li>
+                        <li class=""><a href="#experience">Experience</a></li>
+                        <li class=""><a href="#contact">Contact </a></li>
                     </ul>
                 </nav>
             </div>
@@ -55,20 +67,94 @@
             </div>
             
             <div id="paraAbt">
-            <div id="headAbt"><p> About Me</p></div>
-            
-            <div id="cntnAbt"><p> I am a Web Developer. With 2+ years of experience, I have successfully built a profound skill set in Web development. I can design and develop responsive websites that can smoothly run on all screen sizes.</p></div>
+            <div id="headAbt"><p> About Me.</p></div>
+            <div id="icons">
+                <div id="github"><img src="./res/git.png"></div>
+                <div id="linkedin"><img src="./res/linked.jpg"></div>
+                <div id="gmail"><img src="./res/gmaill.png"></div>
+                <div id="facebook"><img src="./res/fb.jpg"></div>
+                <div id="instagram"><img src="./res/insta.png"></div>
+            </div>
+            <div id="cntnAbt"><p> I am a Front-End Developer. With 2+ years of experience, I have successfully built a profound skill set in Front-end development. I can develop responsive websites that can smoothly run on all screen sizes.</p></div>
             </div>
             
             
             </div>
-        <div id="education"></div>
-            <div id="skills"></div>
+        <div id="education">
+            <div id="headEd"><p>Education <img src="./res/hat.png"></p>
+                
+            </div>
+            <div id="pg">
+            
+                <div><p>Post Graduation</p></div>
+                 <div><p>Banasthali University</p>
+                      <p>Masters of Computer Application</p>
+                       <p>2014-2017</p>
+                       <p>79%</p></div>
+                 </div>
+            <div id="ug">
+            <div><p>Graduation</p></div>
+              <div><p>Banasthali University</p>
+                      <p>Bachelor of Computer Application</p>
+                       <p>2011-2014</p>
+                       <p>79%</p></div>
+                 </div>
+            
+                 <div id="hs">
+            <div><p>High School</p></div>
+              <div><p>Holy Cross School</p>
+                      <p>CBSE</p>
+                       <p>2009-2011</p>
+                       <p>86%</p></div>
+                 </div>
+            
+               <div id="intrmdte">
+            <div><p>Intermediate</p></div>
+              <div><p>Holy Cross School</p>
+                      <p>CBSE</p>
+                       <p>2008-2009</p>
+                       <p>92.2%</p></div>
+                 </div>
+            </div>
+          
+            
+       
+            <div id="skills">
+                <div id="headSkills"><p>Skills<img src="./res/skill.png"></p></div>
+            <div id="skillset">
+                
+                <div><i class="ionic ion-social-html5 color-6"></i><p>HTML5</p><hr></div>
+                <div><i class="ionic ion-social-css3 color-6"></i><p>CSS3</p><hr></div>
+                <div><i class="ionic ion-social-javascript color-6"></i><p>JAVASCRIPT</p><hr></div>
+                <div><img src="./res/jquery.png"/><p>JQUERY</p><hr></div>
+                <div><img src="./res/ajax.png"/><p>AJAX</p><hr></div>
+                <div><img src="./res/jsp.png"/><p>JSP</p><hr></div>
+                
+                
+                </div>
+            <div>
+                
+                <div></div>
+                
+                </div>
+            
+            </div>
+              <div id="experience"></div>
              <div id="contact"></div>
         </div>
        <div id="pnlMask">
+            </div>
         
+<!--
+       
+      <div id="walkingPanda">
+        
+          <div id="panda">
+
         </div>
+      
         
+        </div>  
+-->
 </body>
 </html>

@@ -3,6 +3,7 @@ html, body {
     margin: 0;
     height: 100%;
     font-family: Poppins,sans-serif;
+    background-color: #F9F9F9;
 }
 
 #preloader{
@@ -14,6 +15,51 @@ html, body {
 }
 
 /*about styling*/
+
+#icons {
+    float: right;
+    position: absolute;
+    height: 30px !important;
+    display: none;
+}
+#github{
+
+    height:25px;
+    width:25px;
+    background-size: contain
+}
+#github img {
+    height: 19px;
+    width: 25px;
+    padding: 0 !important;
+}
+
+#linkedin
+{
+    height:25px;
+    width:25px; 
+     background-size: contain
+}
+#gmail
+{
+    height:25px;
+    width:25px; 
+     background-size: contain
+}
+#facebook
+{
+  
+    height:25px;
+    width:25px; 
+     background-size: contain
+}
+#instagram
+{
+    
+    height:25px;
+    width:25px; 
+     background-size: contain
+}
 #about {
     display: flex;
     width: 100%;
@@ -23,17 +69,14 @@ html, body {
 }
 #paraAbt {
     width: 50%;
-    background-color: 
-    whitesmoke;
+   
 }
 #about {
     display: flex;
     width: 100%;
     height: 90vh;
 }
-#cntnAbt {
-    margin-top: 10%;
-}
+
 #cntnAbt p {
     font-size: 15px;
     line-height: 32px;
@@ -45,6 +88,17 @@ html, body {
     font-size: 30px;
     font-weight: 400;
     padding: 15px 50px;
+    text-align: center;
+    border-bottom: 4px double 
+
+    lightcoral;
+    border-radius: 42px;
+
+}
+#headAbt {
+    margin: 0 auto;
+    width: 36%;
+    padding: 60px 0px;
 }
 #imgAbt img {
     width: 100%;
@@ -61,14 +115,17 @@ header {
     transition: all 0.3s ease-out;
 }
 .nav-colored{
-background-color:black;  
+background-color:#222f43;  
+    height:51px!important;
 }
 nav-transparent{
  background-color:transparent;     
 }
+/*
 .navbar-toggle {
     display: none;
 }
+*/
 #home {
     height: 100%;
     width: 100%;
@@ -79,7 +136,7 @@ ul {
 }
 #profile {
     float: left;
-    margin: 10px 0px;
+    margin: 4px 0px;
     width: 25%;
 }
 #profile img {
@@ -100,7 +157,7 @@ ul {
     width: 75%;
 }
 .headerDiv nav li {
-    padding: 5px 11px;
+    padding: 1px 11px;
     float: left;
 }
 
@@ -126,7 +183,7 @@ nav li a {
 }
 nav li a:hover {
     font-size: 14px;
-    border-bottom: 2px solid  teal;
+    border-bottom: 2px solid  lightcoral;
 }
 .auto-write {
     margin: 0 auto;
@@ -164,6 +221,143 @@ nav li a:hover {
     background-size: cover;
       max-width: 100%;
   }
+/* Education Styles*/
+#education{
+    width: 100%;
+    height:100%;
+padding: 100px 0px;
+}
+#education > div {
+
+    display: flex;
+
+}
+#headEd {
+
+    padding-top: 55px;
+    margin-bottom: 60px;
+    margin-left: 0!important;
+
+}
+#headEd p img {
+    width: 38px;
+    height: 35px;
+    transform: rotate(14deg);
+}
+#education > div > div:nth-child(2) p {
+    letter-spacing: 1px;
+
+}
+#education > div {
+
+    display: flex;
+
+    margin-left: 24%;
+}
+#education > div > div {
+
+    width: 50%;
+
+}
+#headEd p {
+
+    text-align: center;
+    border-bottom: 4px double 
+
+    lightcoral;
+    width: 20%;
+    align-self: center;
+    margin: 0 auto;
+    padding: 3px;
+    border-radius: 45px;
+    font-size:2rem;
+
+}
+#pg div:first-child p {
+    font-weight: 506;
+    letter-spacing: 2px;
+}
+#ug div:first-child p {
+    font-weight: 506;
+    letter-spacing: 2px;
+}
+#hs div:first-child p {
+    font-weight: 506;
+    letter-spacing: 2px;
+}
+#intrmdte div:first-child p {
+    font-weight: 506;
+    letter-spacing: 2px;
+}
+/*ends here*/
+/* skills styling*/
+#skills {
+    width: 100%;
+    margin-top: 70px;
+    padding:100px 0px;
+}
+#headSkills p{
+ text-align: center;
+    border-bottom: 4px double 
+
+    lightcoral;
+    width: 20%;
+    align-self: center;
+    margin: 0 auto;
+    padding: 3px;
+    border-radius: 45px;
+    font-size:2rem;
+    margin-bottom: 100px;
+}
+#headSkills p img {
+    width: 25px;
+    height: 29px;
+    margin-left: 20px;
+}
+#skillset {
+    width: 90%;
+    margin: 0 auto;
+}
+.ionic {
+    font-size: 42px;
+}
+hr {
+    width: 42px;
+    margin: 0;
+    padding: 0;
+    color: 
+    lightcoral;
+}
+
+.color-6
+{
+    color: #08a6f3;
+}
+#skillset div {
+    float: left;
+    width: 25%;
+    height: 122px;
+    background-color: 
+    white;
+    border-bottom-right-radius: 20%;
+    margin-bottom: 36px;
+    padding: 60px 40px;
+    margin-right: 20px;
+    box-shadow: 0px 1px 2px 0px
+rgba(90,91,95,0.15);
+transition: all 0.3s ease-in-out;
+}
+#skillset div:hover {
+  border-bottom-right-radius: 4px;
+  box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
+  top: -5px;
+}
+
+#skillset div img{
+    width: 50px;
+    height: 50px;
+}
+/*ends here*/
 
 ///////////////*mobile styles*////////////////////////////////////
 
@@ -181,28 +375,7 @@ nav li a:hover {
     background-size: cover;
          max-width: 100%;
     }
-    nav ul{
-       padding: 0px; 
-       overflow: hidden;
-      
-    }
-   nav ul.open {
-overflow: hidden;
-height: auto;
-width: 137%;
-background-color:
-black;
-position: relative;
-z-index: 9999;
-}
-    .liopen {
-    float: none;
-    }
-    .liopen:hover {
-    background-color: 
-    teal;
-    border-bottom: none;
-}
+
     #innerTyping{
     color: white;
     letter-spacing: 3px;
@@ -214,7 +387,78 @@ z-index: 9999;
 }
     
     /*Queries for Mobiles*/
-    
+      #icon
+    {
+    margin-top:3px;
+    position: absolute;
+    width:100%;
+    }
+   #icon-group {
+    width: 25px;
+    height: 35px;
+    z-index: 9999;
+    cursor: pointer;
+    margin-top: 21px;
+    float: right;
+    position: relative;
+}
+    .center{
+        height:2px;
+        width:100%;
+        background: white;
+        margin-top: 4px;
+        transition: all 0.3s ease-in;
+    }
+    .after{
+        height:2px;
+        background: white;
+        margin-top:4px;
+        transition: all 0.2s ease-in;
+    }
+    .before{
+        height:2px;
+        background: white;
+        width: 100%;
+        transition: all 0.2s ease-in;
+    }
+    .beforeNext{
+        transform: rotate(45deg);
+        transition: all 0.2s ease-in;
+    }
+    .centerNext{
+        height:0px;
+        width:0px;
+        transition: all 0.3s ease-in;
+    }
+    .afterNext{
+        margin-top:-6px;
+        transform: rotate(-45deg);
+        transition: all 0.3s ease-in;
+    }
+    nav ul{
+       padding: 0px!important; 
+       overflow: hidden;
+       height:0;
+  
+    }
+     .liopen {
+    float: none !important;
+    }
+    .liopen:hover {
+    background-color: 
+    teal;
+    border-bottom: none !important;
+}
+    nav ul.open {
+overflow: hidden;
+height: 500px;
+width: 137%;
+background-color:
+black;
+position: relative;
+z-index: 9999 !important;
+transition:height 0.5s ease-in;
+}
     
     
 }
@@ -236,6 +480,7 @@ z-index: 9999;
     background-size: cover;
     max-width: 100%;
     }
+/*
     
     .navbar-toggle {
     position: relative;
@@ -250,6 +495,8 @@ z-index: 9999;
     cursor:pointer;
     }
     
+*/
+/*
     .navbar-toggle .icon-bar {
     background: #f8f8f8;
     display: block;
@@ -258,11 +505,61 @@ z-index: 9999;
     border-radius: 1px;
     margin-bottom: 4px;
     }
+*/
 
+   #icon
+    {
+    margin-top:3px;
+    position: absolute;
+    width:100%;
+    }
+   #icon-group {
+    width: 25px;
+    height: 35px;
+    z-index: 9999;
+    cursor: pointer;
+    margin-top: 21px;
+    float: right;
+    position: relative;
+}
+    .center{
+        height:2px;
+        width:100%;
+        background: white;
+        margin-top: 4px;
+        transition: all 0.3s ease-in;
+    }
+    .after{
+        height:2px;
+        background: white;
+        margin-top:4px;
+        transition: all 0.2s ease-in;
+    }
+    .before{
+        height:2px;
+        background: white;
+        width: 100%;
+        transition: all 0.2s ease-in;
+    }
+    .beforeNext{
+        transform: rotate(45deg);
+        transition: all 0.2s ease-in;
+    }
+    .centerNext{
+        height:0px;
+        width:0px;
+        transition: all 0.3s ease-in;
+    }
+    .afterNext{
+        margin-top:-6px;
+        transform: rotate(-45deg);
+        transition: all 0.3s ease-in;
+    }
     nav ul{
        padding: 0px!important; 
        overflow: hidden;
        height:0;
+    
     }
      .liopen {
     float: none !important;
@@ -272,15 +569,16 @@ z-index: 9999;
     teal;
     border-bottom: none !important;
 }
-   nav ul.open {
+    nav ul.open {
 overflow: hidden;
-height: auto;
+height: 500px;
 width: 137%;
 background-color:
 black;
 position: relative;
 z-index: 9999 !important;
-} 
+        transition:height 0.5s ease-in;
+}
    .auto-write p {
     color: white;
     font-size: 10px;
@@ -299,18 +597,64 @@ z-index: 9999 !important;
     background-size: cover;
     max-width: 100%;
     }
-    
-    .burger-nav{
-    background: url(../res/burger.png) no-repeat 98% center;
-    height:40px;
+    #icon
+    {
+    margin-top:3px;
+    position: absolute;
     width:100%;
-    display: block;
     }
-    
+   #icon-group {
+    width: 25px;
+    height: 35px;
+    z-index: 9999;
+    cursor: pointer;
+    margin-top: 21px;
+    float: right;
+    position: relative;
+}
+    .center{
+        height:2px;
+        width:100%;
+        background: white;
+        margin-top: 4px;
+        transition: all 0.3s ease-in;
+    }
+    .after{
+        height:2px;
+        background: white;
+        margin-top:4px;
+        transition: all 0.2s ease-in;
+    }
+    .before{
+        height:2px;
+        background: white;
+        width: 100%;
+        transition: all 0.2s ease-in;
+    }
+    .beforeNext{
+        transform: rotate(45deg);
+        transition: all 0.2s ease-in;
+    }
+    .centerNext{
+        height:0px;
+        width:0px;
+        transition: all 0.3s ease-in;
+    }
+    .afterNext{
+        margin-top:-6px;
+        transform: rotate(-45deg);
+        transition: all 0.3s ease-in;
+    }
     nav ul{
-       padding: 0px!important; 
-       overflow: hidden;
-       height:0;
+     overflow: hidden;
+   
+     width: 137%;
+     background-color:black;
+     position: relative;
+     z-index: 9999 !important;
+     max-height:0;
+     transition:max-height 0.5s ease-in;
+    padding:0px!important;
     }
      .liopen {
     float: none !important;
@@ -322,12 +666,13 @@ z-index: 9999 !important;
 }
     nav ul.open {
 overflow: hidden;
-height: auto;
+max-height: 500px;
 width: 137%;
 background-color:
 black;
 position: relative;
 z-index: 9999 !important;
+transition:max-height 0.5s ease-in;
 }
    .auto-write p {
     color: white;
@@ -341,6 +686,7 @@ z-index: 9999 !important;
     letter-spacing: 2px;
     font-size: 15px;
      }
+/*
      .navbar-toggle {
     position: relative;
     float: right;
@@ -361,6 +707,7 @@ z-index: 9999 !important;
     border-radius: 1px;
     margin-bottom: 4px;
     }
+*/
     
     
     /*Queries for Mobiles*/
@@ -384,7 +731,7 @@ z-index: 9999 !important;
 }
     #paraAbt {
     background-color: 
-    whitesmoke;
+    white;
     height: auto;
         width:100%;
 }

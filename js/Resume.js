@@ -13,7 +13,7 @@ var typed= new Typed("#innerTyping",{
 }
 
 function bindEvents(){
-   $(".navbar-toggle").bind("click",openMenu);
+   $("#icon-group").bind("click",openMenu);
 $(".headerDiv ul li").bind("click",openMenu);
    var myNav = document.getElementsByTagName('header');
    window.onscroll = function () { 
@@ -40,11 +40,19 @@ $(".headerDiv ul li").bind("click",openMenu);
        },900);
    }
  });
+    $("#icon-group").bind("click",function()
+                         {
+       $(".before").toggleClass("beforeNext");
+       $(".after").toggleClass("afterNext");
+       $(".center").toggleClass("centerNext");
+       
+        
+    });
 }
 
 function openMenu(){
     $(".headerDiv ul").toggleClass("open");
-    $(".headerDiv ul li").toggleClass("liopen");
+    $(".headerDiv ul li").addClass("liopen");
 }
 
 function load(){ document.getElementById("preloader").style.display="none";
