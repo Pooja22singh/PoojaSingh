@@ -324,9 +324,9 @@ padding: 100px 0px;
 hr {
     width: 42px;
     margin: 0;
-    padding: 0;
-    color: 
-    lightcoral;
+      border: none;
+    height: 2px;
+    background-color: lightcoral;
 }
 
 .color-6

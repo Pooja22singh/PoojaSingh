@@ -1,8 +1,9 @@
 #walkingPanda
 {
  
-    padding-top: 310px;
+    top: 100%;
     position: relative;
+  
 }
 #road
 {
@@ -27,6 +28,7 @@
     100%
     {
         background-position: 1600px;
+       
     }  
 }
 @keyframes forward
@@ -39,6 +41,7 @@
     
     100%
     {
-        transform: translateX(1200px)
+        transform: translateX(1170px);
+        
     }
 }
