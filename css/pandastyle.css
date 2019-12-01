@@ -3,7 +3,7 @@
  
     top: 100%;
     position: relative;
-  
+  display: none;
 }
 #road
 {
