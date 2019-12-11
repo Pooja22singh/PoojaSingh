@@ -383,16 +383,26 @@ transition: all 0.3s ease-in-out;
 }
 
 #arrow-left {
-    border-width: 30px 40px 30px 0;
-    border-color: transparent #000 transparent transparent;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #222f43 transparent transparent;
 /*    left: 0;*/
 /*    margin-left: 30px;*/
+     margin-right: 30px;
 }
 #arrow-right {
-    border-width: 30px 0px 30px 40px;
-    border-color: transparent #000;
+    border-width: 10px 0px 10px 15px;
+    border-color: transparent #222f43;
 /*    left: 0;*/
 /*    margin-left: 30px;*/
+   
+}
+#slide + div {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.displayNone{
+    display: none!important;
 }
 .arrow {
     cursor: pointer;
@@ -403,7 +413,241 @@ transition: all 0.3s ease-in-out;
     border-style: solid;
 }
 
+.wrap {
+    width: 80%;
+    margin: 0 auto;
+    background-color: 
+    white;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.wrap:hover {
+    box-shadow: 0px 16px 22px 0px 
+    rgba(90, 91, 95, 0.3);
+}
+#slide p {
 
+    margin-top: 1px;
+    font-size: 14px;
+
+}
+h3 {
+
+    color:#222f43;
+
+}
+#slide div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: 
+    lightcoral;
+}
+#slide img {
+    width: 250px;
+    height: 50px;
+}
+#slide{
+    display: flex;
+justify-content: center;
+   
+}
+div#innerContent {
+    max-height: 200px;
+    overflow: hidden;
+    animation: 5s slider infinite;
+}
+
+@keyframes slider{
+    0%{
+        margin-left:0;
+    }
+      100%{
+        margin-left:-300px;
+    }
+/*
+      25%{
+        margin-left:-100%;
+    }
+      45%{
+        margin-left:-100%;
+    }
+      50%{
+        margin-left:-200%;
+    }
+    70%{
+        margin-left:-200%;
+    }
+      75%{
+        margin-left:-300%;
+    }
+      95%{
+        margin-left:-300%;
+    }
+      100%{
+        margin-left:-300%;
+    }
+*/
+}
+    .fa-reply::before {
+   
+    font-size: 30px;
+}
+#email-id a {
+    width: 73px;
+    height: 66px;
+    background-color: 
+    white;
+    border-radius: 50%;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+     box-shadow: 0px 2px 2px 0px
+rgba(90, 91, 95, 0.15);
+transition: all 0.3s ease-in-out;
+}
+#email-id a:hover{
+     box-shadow: 0px 18px 25px 0px 
+    rgba(90, 91, 95, 0.33);
+    margin-top: -5px;
+}
+#subdetails div {
+    width: 50%;
+}
+#formData {
+    display: flex;
+    width: 100%;
+    margin-top: 6%;
+}
+.fa.fa-mobile.color-6 {
+    background-color: 
+    white;
+    height: 66px;
+    width: 73px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2px 2px 0px
+rgba(90, 91, 95, 0.15);
+transition: all 0.3s ease-in-out;
+}
+#contactForm {
+    width: 50%;
+}
+iframe{
+    width: 100%;
+}
+textarea {
+    width: 100%;
+   resize: none;
+    border: 1px solid transparent;
+    height: 122px;
+    padding: 6px;
+    font-size: 16px;
+    font-weight: normal;
+    color:#999;
+    margin-bottom: 48px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 5px 2px lightgray;
+
+}
+textarea:hover, input:hover{
+    border: 1.5px solid lightcoral;
+    color:unset;
+}
+button {
+width: 20%;
+height: 40px;
+background-color:white;
+border-radius: 20px;
+border: 1px solid lightcoral;
+box-shadow: 1px 1px 6px 2px lightgray;
+}
+button:hover {
+    background-color: 
+lightcoral;
+cursor: pointer;
+color:
+    white;
+}
+#subBtn{
+  display: flex;
+    justify-content: center
+}
+input {
+
+    width: 100%;
+    height: 50px;
+    padding: 4px 6px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #999;
+    border-radius: 2px;
+    border:white 1px solid;
+    box-shadow: 1px 1px 5px 2px lightgray;
+    margin-bottom: 25px;
+
+}
+form {
+
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 40px;
+
+}
+#Map {
+    border: 2px solid 
+    lightcoral;
+    margin-bottom: 20px;
+    width: 50%;
+    margin-left: 42px;
+    margin-right: 20px;
+}
+.fa.fa-mobile.color-6:hover {
+    box-shadow: 0px 18px 25px 0px 
+    rgba(90, 91, 95, 0.33);
+    margin-top: -5px;
+}
+#phoneNo, #email-id {
+   
+    height: 133px;
+    width: 137px;
+       display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fa.fa-mobile.color-6::before {
+    margin: 0 auto;
+    font-size: 30px;
+    }
+#phoneNo {
+      height: 133px;
+    width: 137px;
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.color-5 {
+    color: 
+    lightcoral;
+}
+#subdetails {
+    height: 28vh;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+}
+#details {
+    display: flex;
+    flex-direction: column;
+}
+#contact {
+    width: 90%;
+    height: 90vh;
+    margin: 0 auto;
+}
 #headExp p {
 
     text-align: center;

@@ -48,7 +48,17 @@ $(".headerDiv ul li").bind("click",openMenu);
        
         
     });
+    
+    $(".arrow").bind("click", slideOver);
 }
+
+function slideOver(){
+    var list=$("#slide").children();
+    for(var i=0;i<list.length;i++)
+        {
+             $(list[i]).toggleClass("displayNone");
+        }
+  }
 
 function openMenu(){
     $(".headerDiv ul").toggleClass("open");
