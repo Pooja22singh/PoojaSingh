@@ -590,6 +590,21 @@ input {
     margin-bottom: 25px;
 
 }
+ .scroll-to-top {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    background-color: 
+lightcoral;
+     cursor: pointer;
+color:
+    white;
+    width: 51px;
+    height: 40px;
+    font-size: 30px;
+     text-align: center;
+    padding-top: 7px;
+}
 form {
 
     display: flex;
@@ -767,12 +782,13 @@ form {
        height:0;
   
     }
+    .backClass{
+        background: black;
+    }
      .liopen {
     float: none !important;
     }
     .liopen:hover {
-    background-color: 
-    teal;
     border-bottom: none !important;
 }
     nav ul.open {
@@ -971,6 +987,7 @@ z-index: 9999 !important;
         transform: rotate(-45deg);
         transition: all 0.3s ease-in;
     }
+   
     nav ul{
      overflow: hidden;
    

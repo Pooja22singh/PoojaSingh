@@ -1,6 +1,23 @@
 $(document).ready(function (){
     typeWriter();
     bindEvents();
+    
+         /* Scroll To Top */
+		
+        $(window).scroll(function(){
+        if ($(this).scrollTop() >= 500) {
+            $('.scroll-to-top').fadeIn();
+         } else {
+            $('.scroll-to-top').fadeOut();
+         }
+	   });
+	
+	
+	    $('.scroll-to-top').click(function(){
+		  $('html, body').animate({scrollTop : 0},800);
+		  return false;
+	    });
+		
 });
 
 function typeWriter() {
@@ -45,7 +62,7 @@ $(".headerDiv ul li").bind("click",openMenu);
        $(".before").toggleClass("beforeNext");
        $(".after").toggleClass("afterNext");
        $(".center").toggleClass("centerNext");
-       
+        $("header").toggleClass("backClass");
         
     });
     
@@ -62,7 +79,8 @@ function slideOver(){
 
 function openMenu(){
     $(".headerDiv ul").toggleClass("open");
-    $(".headerDiv ul li").addClass("liopen");
+    $(".headerDiv ul li").toggleClass("liopen");
+   
 }
 
 function load(){ document.getElementById("preloader").style.display="none";
