@@ -365,7 +365,7 @@ transition: all 0.3s ease-in-out;
 
 #experience{
     width: 100%;
-   
+   clear:both;
     padding: 100px 0px;
 }
 
@@ -556,6 +556,7 @@ textarea:hover, input:hover{
     border: 1.5px solid lightcoral;
     color:unset;
 }
+
 button {
 width: 20%;
 height: 40px;
