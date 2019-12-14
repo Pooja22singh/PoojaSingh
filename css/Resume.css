@@ -220,9 +220,9 @@ nav li a:hover {
 }
 .home-section{
     background: url("../res/bg_1398.jpg") no-repeat;
-    height: 100vh;
-    background-size:100vw 100vh;
-      max-width: 100%;
+     height: 100vh;
+   width:100vw;
+    max-width: 100%;
   }
 /* Education Styles*/
 #education{
@@ -712,9 +712,10 @@ form {
 @media screen and (max-width:867px){
    .home-section{
     background: url("../res/bg_700.jpg") no-repeat;
-    height: 100vh;
-    background-size:100vw 100vh;
-         max-width: 100%;
+     height: 100vh;
+   width:100vw;
+    max-width: 100%;
+         background-size: 100vw 100vh;
     }
 
     #innerTyping{
@@ -819,8 +820,9 @@ transition:height 0.5s ease-in;
     .home-section{
     background: url("../res/bg_700.jpg") no-repeat;
     height: 100vh;
-    background-size:100vw 100vh;
+   width:100vw;
     max-width: 100%;
+    background-size: 100vw 100vh;
     }
 /*
     
@@ -935,9 +937,11 @@ z-index: 9999 !important;
     
     .home-section{
     background: url("../res/bg_480.jpg") no-repeat center;
-    height: 100vh;
-    background-size: 100vw 100vh;
+      height: 100vh;
+   width:100vw;
+              background-size: 100vw 100vh;
     max-width: 100%;
+       
     }
     #icon
     {
