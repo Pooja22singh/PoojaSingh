@@ -1037,6 +1037,9 @@ z-index: 9999 !important;
         background-color:
     #222f43;  
 }
+    #contact #headEd {
+    padding-top: 100px;
+}
    .auto-write p {
     color: white;
     font-size: 10px;
