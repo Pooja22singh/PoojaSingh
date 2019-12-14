@@ -957,6 +957,14 @@ z-index: 9999 !important;
     position: absolute;
     width:100%;
     }
+    #icons {
+    display: flex;
+    margin: 0 auto;
+    width: 50%;
+    justify-content: center;
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
    #icon-group {
     width: 25px;
     height: 35px;
@@ -1097,9 +1105,10 @@ transition:max-height 0.5s ease-in;
 
 }
     #headAbt {
-    margin: 0 auto;
+       margin: 0 auto;
     width: 50%;
-    padding: 60px 0px;
+    padding: 26px 0px;
+    padding-bottom: 0px;
 }
 #headAbt p {
     font-size:16px;
