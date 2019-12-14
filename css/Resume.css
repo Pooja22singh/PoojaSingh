@@ -1103,6 +1103,25 @@ transition:max-height 0.5s ease-in;
     line-height: 32px;
     padding: 0px 50px;
 
+}.scroll-to-top {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    background-color: lightcoral;
+    cursor: pointer;
+    color: white;
+    width: 40px;
+    height: 35px;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 5px;
+}
+    #subdetails {
+    height: 45vh;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
 }
     #headAbt {
        margin: 0 auto;
@@ -1112,15 +1131,38 @@ transition:max-height 0.5s ease-in;
 }
     .ionic {
     font-size: 35px;
+}#formData {
+    display: flex;
+    width: 100%;
+    margin-top: 6%;
+    flex-direction: column;
+}
+    #Map {
+
+    width: 100%;
+     margin-left: 0px
+}
+    #headExp p {
+  
+    width: 50%;
+     font-size: 16px;
+}
+    #contactForm {
+    width: 100%;
+    margin-bottom: 20px;
 }
     #skillset div {
   
-    width: 90%;
+    width: 80%;
     height: 75px;
     padding-top: 10px;
     padding-bottom: 55px;
     padding-left: 38px;
 }
+    #headExp p img {
+    width: 25px;
+    height: 25px;
+    }
 #headAbt p {
     font-size:16px;
     font-weight: 400;
