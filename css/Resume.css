@@ -1096,10 +1096,15 @@ transition:max-height 0.5s ease-in;
     padding: 0px 50px;
 
 }
+    #headAbt {
+    margin: 0 auto;
+    width: 50%;
+    padding: 60px 0px;
+}
 #headAbt p {
-    font-size:20px;
+    font-size:16px;
     font-weight: 400;
-    padding:15px 50px;
+    padding:0px;
 }
 
 #cntnAbt {

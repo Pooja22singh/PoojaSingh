@@ -57,6 +57,18 @@ $(".headerDiv ul li").bind("click",openMenu);
        },900);
    }
  });
+     $('#profile a').on('click', function (e) {
+   if (this.hash !== '') {
+     e.preventDefault();
+
+     const hash = this.hash;
+
+     $('html, body')
+       .animate({
+         scrollTop: $(hash).offset().top
+       },900);
+   }
+ });
     $("#icon-group").bind("click",function()
                          {
        $(".before").toggleClass("beforeNext");
