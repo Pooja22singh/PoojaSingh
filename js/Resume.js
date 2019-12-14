@@ -30,20 +30,29 @@ var typed= new Typed("#innerTyping",{
 }
 
 function bindEvents(){
-   $("#icon-group").bind("click",openMenu);
-$(".headerDiv ul li").bind("click",openMenu);
+  $("#icon-group").bind("click",openMenu);
+$(".headerDiv ul li").bind("click",closeMenu);
    var myNav = document.getElementsByTagName('header');
-   window.onscroll = function () { 
-    "use strict";
-    if (window.pageYOffset >= 200 ) {
-        $(myNav).addClass("nav-colored");
+//   window.onscroll = function () { 
+//    "use strict";
+//    if (window.pageYOffset >= 200 ) {
+//        $(myNav).addClass("nav-colored");
+//        $(myNav).removeClass("nav-transparent");
+//    } 
+//    else {
+//      $(myNav).removeClass("nav-colored");
+//        $(myNav).addClass("nav-transparent");
+//    }
+//};
+      $(window).on('scroll', function () {
+            if ($(window).scrollTop() > 100) {
+                $(myNav).addClass("nav-colored");
         $(myNav).removeClass("nav-transparent");
-    } 
-    else {
-      $(myNav).removeClass("nav-colored");
+            } else {
+                  $(myNav).removeClass("nav-colored");
         $(myNav).addClass("nav-transparent");
-    }
-};
+            }
+        });
     // Option 2 - jQuery Smooth Scrolling
  $('nav a').on('click', function (e) {
    if (this.hash !== '') {
@@ -69,14 +78,7 @@ $(".headerDiv ul li").bind("click",openMenu);
        },900);
    }
  });
-    $("#icon-group").bind("click",function()
-                         {
-       $(".before").toggleClass("beforeNext");
-       $(".after").toggleClass("afterNext");
-       $(".center").toggleClass("centerNext");
-       // $("header").toggleClass("backClass");
-        
-    });
+
     
     $(".arrow").bind("click", slideOver);
 }
@@ -90,10 +92,20 @@ function slideOver(){
   }
 
 function openMenu(){
+     $(".before").toggleClass("beforeNext");
+//       $(".after").toggleClass("afterNext");
+       $(".after").toggleClass("afterNext");
     $(".headerDiv ul").toggleClass("open");
     $(".headerDiv ul li").toggleClass("liopen");
    
 }
-
+function closeMenu(){
+    $(".headerDiv ul").removeClass("open");
+    $(".headerDiv ul li").removeClass("liopen");
+     $(".before").toggleClass("beforeNext");
+//       $(".after").toggleClass("afterNext");
+       $(".after").toggleClass("afterNext");
+   
+}
 function load(){ document.getElementById("preloader").style.display="none";
 }
