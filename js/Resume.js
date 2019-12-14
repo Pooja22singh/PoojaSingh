@@ -62,7 +62,7 @@ $(".headerDiv ul li").bind("click",openMenu);
        $(".before").toggleClass("beforeNext");
        $(".after").toggleClass("afterNext");
        $(".center").toggleClass("centerNext");
-        $("header").toggleClass("backClass");
+       // $("header").toggleClass("backClass");
         
     });
     
