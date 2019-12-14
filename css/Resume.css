@@ -1181,6 +1181,10 @@ z-index: 9999 !important;
     margin-left: 2%;
     padding-left: 5px;
 }
+    #headEd{
+        padding-top:60px; 
+        
+    }
 #headEd p {
    
     width: 50%;
