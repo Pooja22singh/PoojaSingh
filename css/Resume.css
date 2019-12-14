@@ -221,7 +221,7 @@ nav li a:hover {
 .home-section{
     background: url("../res/bg_1398.jpg") no-repeat;
     height: 100vh;
-    background-size:100%;
+    background-size:100vw 100vh;
       max-width: 100%;
   }
 /* Education Styles*/
@@ -713,7 +713,7 @@ form {
    .home-section{
     background: url("../res/bg_700.jpg") no-repeat;
     height: 100vh;
-    background-size: 100%;
+    background-size:100vw 100vh;
          max-width: 100%;
     }
 
@@ -819,7 +819,7 @@ transition:height 0.5s ease-in;
     .home-section{
     background: url("../res/bg_700.jpg") no-repeat;
     height: 100vh;
-    background-size: 100%;
+    background-size:100vw 100vh;
     max-width: 100%;
     }
 /*
@@ -936,7 +936,7 @@ z-index: 9999 !important;
     .home-section{
     background: url("../res/bg_480.jpg") no-repeat center;
     height: 100vh;
-    background-size: 100%;
+    background-size: 100vw 100vh;
     max-width: 100%;
     }
     #icon
