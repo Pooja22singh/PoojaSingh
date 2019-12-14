@@ -704,16 +704,90 @@ form {
 /*experience ends here*/
 ///////////////*mobile styles*////////////////////////////////////
 
-@media screen and (max-width:1000px){
+@media only screen and (max-width:1367px){
+    
     #innerTyping{
     color: white;
     letter-spacing: 3px;
     font-size: 33px;
     }
+    .home-section{
+    background: url("../res/bg_1367.jpg") no-repeat;
+     height: 100vh;
+   width:100vw;
+    max-width: 100%;
+/*         background-size: 100vw 100vh;*/
+           background-size: cover;
+     background-position: 50% 50%;
+    }
+}
+
+@media only screen and (max-width:1080px){
+    
+    #innerTyping{
+    color: white;
+    letter-spacing: 3px;
+    font-size: 33px;
+    }
+    
+    
+.home-section{
+    background: url("../res/bg_1086.jpg") no-repeat;
+     height: 100vh;
+   width:100vw;
+    max-width: 100%;
+/*         background-size: 100vw 100vh;*/
+           background-size: cover;
+     background-position: 50% 50%;
+    }
+
+       #skillset div {
+    width: 21%;
+padding: 60px 43px;
+    }
+#headAbt p {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 9px 50px;
+}
+   #headEd p {
+   
+    width: 25%;
+       font-size: 1.5rem;
+}   
+    #headSkills p {
+  
+    width: 21%;
+   
+    font-size: 1.5rem;
+ 
+}
+    #headExp p img {
+    width: 30px;
+    height: 22px;
+    }
+    #headExp p {
+
+    width: 25%;
+
+    font-size: 1.5rem;
+}
+       .auto-write p {
+font-size: 12px;
+    }
+    
+    #headAbt {
+    margin: 0 auto;
+    width: 40%;
+    padding: 60px 0px;
+}
+    #education > div {
+     margin-left: 17%;
+}
   }
-@media screen and (max-width:867px){
+@media only screen and (max-width:867px){
    .home-section{
-    background: url("../res/bg_700.jpg") no-repeat;
+    background: url("../res/bg_846.jpg") no-repeat;
      height: 100vh;
    width:100vw;
     max-width: 100%;
@@ -806,11 +880,182 @@ position: relative;
 z-index: 9999 !important;
 transition:height 0.5s ease-in;
 }
+     #icon
+    {
+    margin-top:3px;
+    position: absolute;
+    width:100%;
+    }
+    #icons {
+    display: flex;
+    margin: 0 auto;
+    width: 50%;
+    justify-content: center;
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+   #icon-group {
+    width: 25px;
+    height: 35px;
+    z-index: 9999;
+    cursor: pointer;
+    margin-top: 21px;
+    float: right;
+    position: relative;
+}
+    .center{
+        height:2px;
+        width:100%;
+        background: white;
+        margin-top: 4px;
+        transition: all 0.3s ease-in;
+    }
+    .after{
+        height:2px;
+        background: white;
+        margin-top:4px;
+        transition: all 0.2s ease-in;
+    }
+    .before{
+        height:2px;
+        background: white;
+        width: 100%;
+        transition: all 0.2s ease-in;
+    }
+    .beforeNext{
+        transform: rotate(45deg);
+        transition: all 0.2s ease-in;
+    }
+    .centerNext{
+        height:0px;
+        width:0px;
+        transition: all 0.3s ease-in;
+    }
+    .afterNext{
+        margin-top:-2px;
+        transform: rotate(-45deg);
+        transition: all 0.2s ease-in;
+    }
+   
+    nav ul{
+    overflow: hidden;
+    height: 0px;
+    width: 137%;
+    background-color:
+    #222f43;
+    position: relative;
+    z-index: 9999 !important;
+    transition:height 0.5s ease-in;
+    }
+     .liopen {
+    float: none !important;
+    }
+    .liopen:hover {
+    background-color: 
+    teal;
+    border-bottom: none !important;
+}
+    .headerDiv nav li{
+        padding:7px 11px;
+        float:none;
+    }
     
+    nav ul.open {
+    transition:height 0.5s ease-in;
+    height: 250px;
+        background-color:
+    #222f43;  
+}
+    #contact #headEd {
+    padding-top: 100px;
+}
+   .auto-write p {
+    color: white;
+font-size: 12px;
+    letter-spacing: 4px;
+    text-align: center;
+    }  
+    #headAbt {
+
+    width: 50%;
+
+}
+    #headAbt p {
+    font-size: 20px;
+   }
+    
+    
+    
+    #education > div {
+    margin-left: 15%;
+}
+    
+    #skillset div {
+        width: 19%;
+    }
+    #Map {
+    border: 2px solid 
+    lightcoral;
+    width: 100%;
+    margin: 42px auto;
+}
+    #contactForm {
+    width: 100%;
+}
+    #formData {
+    flex-direction: column;
+}
+}
+@media only screen and (max-width:800px){
+#skillset div {
+    width: 15%;
+ }
+    #skillset {
+    width: 90%;
+    margin: 8px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+}
+@media only screen and (max-width:700px){
+    
+    #innerTyping{
+    color: white;
+    letter-spacing: 3px;
+    font-size: 19px;
+    }
+     .typed-cursor,.typed-cursor--blink{
+  color:white;
+   font-size: 19px; 
+}
+    
+      .home-section{
+    background: url("../res/bg_760.jpg") no-repeat;
+    height: 100vh;
+   width:100vw;
+    max-width: 100%;
+background-size: cover;
+background-position: center;
+    }
+    
+    
+   #headAbt p {
+    font-size: 19px;
+} 
+    
+    
+#education > div {
+    margin-left: 11%;
+}
+    
+ #skillset div {
+    width: 18%;
+}   
     
 }
-
-@media screen and (max-width:700px){
+@media only screen and (max-width:700px){
     
     #innerTyping{
     color: white;
@@ -935,11 +1180,12 @@ z-index: 9999 !important;
     letter-spacing: 4px;
     text-align: center;
     }
-
-
+#skillset div {
+    width: 21%;
 }
 
-@media screen and (max-width:480px){
+}
+@media only screen and (max-width:480px){
     
     .home-section{
     background: url("../res/bg_Res.jpg") no-repeat center;
