@@ -1346,7 +1346,7 @@ z-index: 9999 !important;
         width:100%;
 }
     #cntnAbt p {
-   font-size: 10px;
+   font-size: 12px;
     line-height: 32px;
     padding: 0px 50px;
 
@@ -1356,10 +1356,10 @@ z-index: 9999 !important;
     right: 5px;
     background-color: lightcoral;
     cursor: pointer;
-    color: white;
-    width: 40px;
-    height: 35px;
-    font-size: 25px;
+     color: white;
+    width: 30px;
+    height: 30px;
+    font-size: 19px;
     text-align: center;
     padding-top: 5px;
 }
@@ -1405,6 +1405,7 @@ z-index: 9999 !important;
     padding-top: 10px;
     padding-bottom: 55px;
     padding-left: 38px;
+        font-size: 12px;
 }
     #headExp p img {
     width: 25px;
@@ -1452,5 +1453,66 @@ z-index: 9999 !important;
      .typed-cursor,.typed-cursor--blink{
   color:white;
    font-size: 15px; 
+}
+    .auto-write {
+    width: 74%;
+}
+    #education {
+      font-size: 13px;
+}
+    #subdetails div {
+    font-size: 12px;
+}
+    button {
+    width: 35%;
+        height:28px;
+    }
+    .ionic {
+    font-size: 30px;
+}
+}
+@media only screen and (max-width:480px){
+
+#icons {
+    margin-top: 4%;
+    }
+    
+    #imgAbt {
+    height: 55%;
+    }
+    #headAbt {
+   padding: 0px 0px;
+}
+    
+  #innerTyping {
+letter-spacing: 2px;
+    font-size: 14px;
+}  
+    #education {
+    padding: 16px 0px;
+}
+}
+
+@media only screen and (max-width:340px){
+#cntnAbt p {
+    font-size: 10px;
+}
+    #imgAbt {
+    height: 50%;
+}
+    button {
+    width: 42%;
+    height: 26px;
+}
+    #education {
+    font-size: 10px;
+}
+    
+    .auto-write p {
+     letter-spacing: 3px;
+}
+    #innerTyping {
+    letter-spacing: 1px;
+    font-size: 13px;
 }
 }
