@@ -1009,15 +1009,14 @@ z-index: 9999 !important;
     }
    
     nav ul{
-     overflow: hidden;
-   
-     width: 137%;
-     background-color:black;
-     position: relative;
-     z-index: 9999 !important;
-     height:0;
-     transition:height 0.5s ease-in;
-    padding:0px!important;
+    overflow: hidden;
+    height: 0px;
+    width: 137%;
+    background-color:
+    #222f43;
+    position: relative;
+    z-index: 9999 !important;
+    transition:height 0.5s ease-in;
     }
      .liopen {
     float: none !important;
@@ -1028,19 +1027,15 @@ z-index: 9999 !important;
     border-bottom: none !important;
 }
     .headerDiv nav li{
-        
+        padding:7px 11px;
         float:none;
     }
     
     nav ul.open {
-overflow: hidden;
-height: 500px;
-width: 137%;
-background-color:
-black;
-position: relative;
-z-index: 9999 !important;
-transition:height 0.5s ease-in;
+    transition:height 0.5s ease-in;
+    height: 250px;
+        background-color:
+    #222f43;  
 }
    .auto-write p {
     color: white;
