@@ -143,9 +143,21 @@
             
             <div id="slide">
                 <div id="innerContent">
-                <div class="">
+                    <div id="mainTrack">
+                         <div class="carousel_slide"id="cloneLast">
+                                <div>
+                    <img src="./res/libsysicon.png">
+                    <div>
+                        <h3>Libsys Limited</h3>
+                        <h4>Internship</h4>
+                        
+                        <p>Jan 2017 - May 2017</div>
+                    
+                    </div>
+                </div>
+                <div class="carousel_slide ">
                 
-                <div >
+                <div>
                     <img src="./res/libsysicon.png">
                     <div>
                         <h3>Libsys Limited</h3>
@@ -157,7 +169,7 @@
              
                 
                 </div>
-                 <div class="">
+                 <div class="carousel_slide">
                                 <div>
                     <img src="./res/libsysicon.png">
                     <div>
@@ -168,9 +180,25 @@
                     
                     </div>
                 </div>
-                </div>
-            </div>
+                            <div class="carousel_slide" id="cloneFirst">
+                
                 <div>
+                    <img src="./res/libsysicon.png">
+                    <div>
+                        <h3>Libsys Limited</h3>
+                        <h4>Software Engineer</h4>
+                        
+                        <p>July 2017-Current</p></div>
+                    
+                    </div>
+             
+                
+                </div>
+                   </div>
+                    </div>
+                </div>
+         
+                <div class="arrow-container">
         <div id="arrow-left" class="arrow"></div> 
             <div id="arrow-right" class="arrow"></div>  
                   </div>
@@ -219,10 +247,12 @@
     
     <textarea placeholder="Your message" name="message"></textarea>
   </label>
-
+ <label id="errMsg" class="displayNone errMsg">
+     Please enter both the details to send the message.
+  </label>
   <!-- your other form fields go here -->
 <div id="subBtn">
-                     <button type="submit">Submit</button>
+                     <button type="button">Submit</button>
                     </div>
  
 </form></div>
@@ -247,6 +277,6 @@
       
         
         </div>  
-
+<script src="js/Carousel.js"></script>
 </body>
 </html>

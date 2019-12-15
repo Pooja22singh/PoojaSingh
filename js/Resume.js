@@ -30,6 +30,7 @@ var typed= new Typed("#innerTyping",{
 }
 
 function bindEvents(){
+    $("#subBtn button").bind("click",validateAndSubmit);
   $("#icon-group").bind("click",openMenu);
 $(".headerDiv ul li").bind("click",closeMenu);
    var myNav = document.getElementsByTagName('header');
@@ -80,16 +81,33 @@ $(".headerDiv ul li").bind("click",closeMenu);
  });
 
     
-    $(".arrow").bind("click", slideOver);
+   // $(".arrow").bind("click", slideOver);
 }
 
-function slideOver(){
-    var list=$("#slide").children();
-    for(var i=0;i<list.length;i++)
+function validateAndSubmit(){
+    let email=document.querySelector("#contactForm input").value;
+    let message= document.querySelector("#contactForm textarea").value;
+    let form= document.querySelector("#contactForm form");
+    let regEx=/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    if(email===""||message===""){
+        document.querySelector("#errMsg").classList.remove("displayNone");
+        return;
+    }
+    else if(email!=="" && message!=="")
         {
-             $(list[i]).toggleClass("displayNone");
+            if(regEx.test(email))
+                {
+             document.querySelector("#errMsg").classList.add("displayNone");
+            form.submit();
+                }
+            else{
+              document.querySelector("#errMsg").classList.remove("displayNone"); 
+              document.querySelector("#errMsg").textContent="Invalid Email Id";
+                document.querySelector("#contactForm input").value="";
+            }
         }
-  }
+    
+}
 
 function openMenu(){
      $(".before").toggleClass("beforeNext");
@@ -109,3 +127,5 @@ function closeMenu(){
 }
 function load(){ document.getElementById("preloader").style.display="none";
 }
+
+
