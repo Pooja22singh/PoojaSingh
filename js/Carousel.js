@@ -17,7 +17,7 @@ carousel_parent.style.transform= 'translateX('+(-slideWidth*counter)+'px)';
 
 setInterval(function(){
     bannerloop();
-},2000);
+},3000);
 function bannerloop(){
      if(counter>=carousel_slides.length-1)
         return;
